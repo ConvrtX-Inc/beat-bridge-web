@@ -1,0 +1,25 @@
+.custom-tooltip{
+    background-color: #030229;
+    border-radius: 12px;
+    color: #FFFFFF;
+    padding-top: 12px;
+    padding-bottom: 2px;
+    font-size: 12px;
+
+    .content span{
+        font-weight: 800; 
+    }
+
+    .content{
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
+
+
+
+.spacer{
+    border: 1px solid #24233E;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
