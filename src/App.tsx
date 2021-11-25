@@ -7,7 +7,7 @@ import SignIn from "./components/SignIn/signin";
 import SignUp from "./components/SignUp/signup";
 import ForgotPassword from "./components/SignIn/forgotpassword";
 import Dashboard from './components/dashboard-page/dashboard';
-import Users from './components/users/Users';
+import Users from './components/users-page/Users';
 import Support from './components/support/Support';
 
 function App() {
