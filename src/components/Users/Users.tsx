@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Container} from "react-bootstrap";
-import NavBar from "../navbar/NavBar";
+import NavBar from "../nav/NavBar";
 
 import "./Users.scss";
 

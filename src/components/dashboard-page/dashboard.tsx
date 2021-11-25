@@ -3,7 +3,6 @@ import { Container, Navbar, Image, Nav, Row, Col, Card } from "react-bootstrap";
 
 import "./dashboard.scss";
 // images
-import dashboardImage from "../../assets/images/dashboard-image.png";
 import totalSongsImage from "../../assets/images/total-songs-image.png";
 import locationImage from "../../assets/images/location-image.png";
 import GoogleMapContainer from "../google-map/GoogleMapContainer";
@@ -11,7 +10,7 @@ import GoogleMapContainer from "../google-map/GoogleMapContainer";
 // Charts
 import CustomLineChart from "../charts/CustomLineChart";
 import DashboardStats from "../dashboard-stats/DashboardStats";
-import NavBar from "../navbar/NavBar";
+import NavBar from "../nav/NavBar";
 
 const totalSongsData = [
   {
