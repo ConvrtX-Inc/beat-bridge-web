@@ -1,0 +1,46 @@
+@font-face {
+  font-family: "gilroyregular";
+  src: url("../../assets/fonts/Gilroy-Regular.woff") format("woff");
+}
+.dashboard-container {
+  margin: 20px 15px 0px 15px;
+}
+.title-text-container {
+  text-align: left;
+  display: inline-block;
+  color: #030229;
+  margin: 16px;
+
+  h4 {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 23px;
+    font-weight: bold;
+  }
+}
+
+.count-container {
+  display: inline-block;
+}
+
+@media only screen and (min-width: 768px) {
+  .dashboard-container {
+    margin: 20px 48px 0px 48px;
+  }
+
+  .welcome-image {
+    bottom: 20px;
+  }
+  .title-text-container {
+    h4 {
+      font-weight: bold;
+      font-size: 18px;
+    }
+    h1 {
+      font-size: 35px;
+      font-weight: bold;
+    }
+  }
+}

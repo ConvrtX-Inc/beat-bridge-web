@@ -6,8 +6,7 @@ import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
 import Form from 'react-bootstrap/Form';
-import Row from 'react-bootstrap/Row';
-
+ 
 import './signin.scss';
 import imagelogo from '../../assets/images/image-logo.png';
 // import image from '../../assets/images/image.png';
