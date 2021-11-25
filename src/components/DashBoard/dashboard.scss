@@ -2,90 +2,45 @@
   font-family: "gilroyregular";
   src: url("../../assets/fonts/Gilroy-Regular.woff") format("woff");
 }
-
+.dashboard-container {
+  margin: 20px 15px 0px 15px;
+}
 .title-text-container {
   text-align: left;
   display: inline-block;
   color: #030229;
   margin: 16px;
+
   h4 {
-    font-weight: bold;
-    font-size: 18px;
+    font-size: 16px;
   }
+
   h1 {
-    font-size: 35px;
+    font-size: 23px;
     font-weight: bold;
   }
-}
-
-.welcome-image {
-  display: inline-block;
-  position: relative;
-  bottom: 25px;
-}
-
-.welcome-container {
-  margin-top: 40px;
-  margin-bottom: 32px;
-}
-
-.graph-title {
-  color: #030229;
-  font-size: 14px;
-  font-weight: bold;
-  white-space: nowrap;
-}
-
-.count-text {
-  font-size: 34px;
-  font-weight: 800;
-}
-
-.count-text.users {
-  color: #a950ff;
-}
-
-.count-text.songs {
-  color: #5484ff;
-}
-
-.count-text.projects {
-  color: #ff3e3e;
-}
-.count-text.playlists {
-  color: #5ebf22;
-}
-
-.percentage-container {
-  float: right;
 }
 
 .count-container {
   display: inline-block;
 }
 
-.graph-percentage {
-  width: 80%;
-  text-align: center;
-  color: #ffffff;
-  padding: 2px;
-  border-radius: 14px;
-  font-size: 13px;
-  font-weight: 800;
-  margin-top: 4px;
-}
+@media only screen and (min-width: 768px) {
+  .dashboard-container {
+    margin: 20px 48px 0px 48px;
+  }
 
-.graph-percentage.users {
-  background: #ff7b7b;
-}
-
-.graph-percentage.songs {
-  background: #7BA0FF;
-}
-
-.graph-percentage.projects {
-  background: #FFBA7B;
-}
-.graph-percentage.playlists {
-  background: #5EBF22;
+  .welcome-image {
+    bottom: 20px;
+  }
+  .title-text-container {
+    h4 {
+      font-weight: bold;
+      font-size: 18px;
+    }
+    h1 {
+      font-size: 35px;
+      font-weight: bold;
+    }
+  }
 }

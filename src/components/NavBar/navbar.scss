@@ -3,12 +3,6 @@
   width: 68px;
 }
 
-// .nav-icon-end{
-//     height: 24px;
-//     width: 24px;
-
-// }
-
 .nav-item-end {
   margin-left: 42px;
   margin-top: 8px;
@@ -31,10 +25,21 @@
 }
 
 .nav-container {
-  border-bottom: 1px solid #e2e9f4;
+  margin: 20px 15px 0px 15px;
 }
 
 .nav-active {
   border-bottom: 4px solid #8201ff;
   color: #8201ff !important;
+}
+
+
+@media only screen and (min-width: 768px) {
+  .nav-container {
+    margin: 20px 48px 0px 48px;
+  }
+}
+
+.nav-divider{
+  border-bottom: 1px solid #e2e9f4;
 }

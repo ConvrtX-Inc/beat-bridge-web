@@ -4,14 +4,13 @@ import { ReactComponent as SupportIcon } from "../../assets/icons/support.svg";
 
 function NavItemIcon(props: any) {
   if (props.routePath == "/dashboard") {
-    return <DashboardIcon className="nav-icon" fill={props.fill} />;
+    return <DashboardIcon className="nav-icon" fill={props.color}   />;
   } else if (props.routePath == "/users") {
-    return <UsersIcon />;
+    return <UsersIcon stroke={props.color} />;
   } else if (props.routePath == "/support") {
-    return <SupportIcon />;
+    return <SupportIcon stroke={props.color} />;
   }
-
-  return <DashboardIcon fill={props.fill} />;
+  return <DashboardIcon stroke={props.color} />;
 }
 
 export default NavItemIcon;
