@@ -4,7 +4,7 @@ import './App.scss';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import SignIn from "./components/SignIn/signin";
-import SignUp from "./components/SignUp/signup";
+import SignUp from "./components/signup/signup";
 import ForgotPassword from "./components/SignIn/forgotpassword";
 import Dashboard from './components/dashboard-page/dashboard';
 import Users from './components/users-page/Users';
