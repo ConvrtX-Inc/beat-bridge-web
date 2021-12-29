@@ -4,7 +4,7 @@ import NavBar from "../nav/NavBar";
 import { BsTrash } from 'react-icons/bs';
 
 import "./Users.scss";
-import totalSongsImage from "../../assets/images/users-image.png";
+import usersImage from "../../assets/images/users-image.png";
 import DashboardStats from "../dashboard-stats/DashboardStats";
 
 import avatar from "../../assets/images/mock-avatar.png";
@@ -59,7 +59,7 @@ export default class Users extends Component {
           <DashboardStats />
           <Row className="text-start">
             <Col className="welcome-container">
-              <Image src={totalSongsImage} />
+              <Image src={usersImage} />
               <div className="title-text-container">
                 <h1>Users</h1>
               </div>
