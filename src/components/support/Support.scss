@@ -10,3 +10,150 @@
     margin: 20px 60px 0px 60px;
   }
 }
+
+.avatar {
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.sender-name{
+  margin-top: 10px;
+}
+
+.message-container{
+    padding: 20px;
+    position: relative;
+    border-bottom: 1px solid #D4E0F1;
+    border-right: 1px solid #D4E0F1;
+    font-size: 18px;
+    font-weight: bold;
+}
+.message-link{
+  color:grey;
+  font-size: 16px !important;
+}
+
+.chat-support-container{
+  border: 2px solid #D4E0F1;
+  border-radius: 6px;
+
+  display: flex;
+}
+
+.chat-input-container textarea{
+    border: none;
+    outline: none;
+    width: 100%;
+    resize: none;
+}
+
+.chat-input-container{
+  border-top: 1px solid #D4E0F1;
+  padding: 30px;
+  display: flex;
+     
+}
+
+.chat-thread-container{
+  padding: 40px;
+  height: 686px;
+  overflow: auto;
+}
+
+.thread-list{
+  flex-grow: 6;
+}
+
+
+.custom-spacer{
+  height: 30px;
+}
+
+.send-btn {
+  width: 120px;
+  height: 57px;
+  background: #a754fa;
+  box-shadow: 0px 8px 25px rgba(137, 20, 0, 0.02);
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 21px;
+  text-align: center;
+  text-transform: capitalize;
+  cursor: pointer;
+
+  &:hover {
+      background-color: #6e37a5;
+  }
+  &:focus {
+      outline: none;
+      background-color: #6e37a5;
+  }
+  &:disabled {
+      opacity: 0.7;
+      cursor: not-allowed;
+      background-color: #3e3e3e;
+      border-color: #0a0a0a;
+  }
+}
+
+.incoming-message{
+  background: rgba(54, 197, 240, 0.15);
+    border-radius: 23px; 
+    text-align: left;
+    color: #36C5F0;
+    font-weight: 500;
+    width: 60%;
+     display: flex;
+    margin-bottom: 16px;
+    padding:14px;
+}
+
+.message{
+  flex-grow: 8;
+}
+
+.time{
+  margin-top: 4px;
+  font-size: 12px;
+  flex-grow: 1;
+}
+
+.my-message{
+  background: #F3F3F3;
+    border-radius: 23px;
+    float: right;
+    text-align: left;
+    color: #9B9B9B;
+    font-weight: 500;
+    width: 60%;
+    float: right;
+    display: flex;
+    margin-bottom: 16px;
+    padding:14px;
+}
+
+.message-active {
+  background: #F7FBFF;
+}
+
+.people-list{
+  height: 808px;
+  border-right: 1px solid #D4E0F1;
+ overflow-y: scroll;
+}
+
+ .pointer{
+  width: 0;
+  height: 0;
+  border-top: 12px solid #FFFFFF;
+  border-bottom: 12px solid #FFFFFF;
+  border-left: 12px solid #D4E0F1;
+  right: -12px;
+  top: 70px;
+  position: absolute;
+ }
+
