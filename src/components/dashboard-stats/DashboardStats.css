@@ -1,0 +1,70 @@
+.welcome-image {
+  display: inline-block;
+  position: relative;
+  bottom: 18px;
+}
+
+.welcome-container {
+  margin-top: 40px;
+  margin-bottom: 32px;
+}
+
+.graph-percentage {
+  width: 50%;
+  text-align: center;
+  color: #ffffff;
+  padding: 2px;
+  border-radius: 14px;
+  font-size: 12px;
+  font-weight: 800;
+  margin-top: 4px;
+}
+
+.graph-title {
+  color: #030229;
+  font-size: 14px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.count-text {
+  font-size: 34px;
+  font-weight: 800;
+}
+
+.graph-percentage.users {
+  background: #ff7b7b;
+}
+
+.graph-percentage.songs {
+  background: #7ba0ff;
+}
+
+.graph-percentage.projects {
+  background: #ffba7b;
+}
+
+.graph-percentage.playlists {
+  background: #5ebf22;
+}
+
+.count-text.users {
+  color: #a950ff;
+}
+
+.count-text.songs {
+  color: #5484ff;
+}
+
+.count-text.projects {
+  color: #ff3e3e;
+}
+
+.count-text.playlists {
+  color: #5ebf22;
+}
+
+.percentage-container {
+  float: right;
+}
+/*# sourceMappingURL=DashboardStats.css.map */

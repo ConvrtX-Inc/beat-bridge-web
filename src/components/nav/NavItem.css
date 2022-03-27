@@ -1,0 +1,23 @@
+.active {
+  color: #8201ff !important;
+}
+
+.nav-item {
+  color: #18171f;
+  margin: 12px;
+}
+
+.icon,
+.text {
+  vertical-align: middle;
+  display: inline-block;
+  margin-left: 12px;
+}
+
+.divider {
+  border-bottom: 4px solid #8201ff;
+  height: 2px;
+  position: relative;
+  bottom: -29px;
+}
+/*# sourceMappingURL=NavItem.css.map */

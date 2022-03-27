@@ -1,0 +1,46 @@
+.app-logo {
+  height: 60.44px;
+  width: 68px;
+}
+
+.nav-item-end {
+  margin-left: 42px;
+  margin-top: 8px;
+}
+
+.nav-item-start {
+  color: #18171f;
+}
+
+.nav-item-start img {
+  margin: 12px;
+}
+
+.nav-item-avatar {
+  margin-left: 42px;
+  border: 1px solid gray;
+  height: auto;
+  width: auto;
+  padding: 4px;
+  border-radius: 6px;
+}
+
+.nav-container {
+  margin: 20px 15px 0px 15px;
+}
+
+.nav-active {
+  border-bottom: 4px solid #8201ff;
+  color: #8201ff !important;
+}
+
+@media only screen and (min-width: 768px) {
+  .nav-container {
+    margin: 20px 48px 0px 48px;
+  }
+}
+
+.nav-divider {
+  border-bottom: 1px solid #e2e9f4;
+}
+/*# sourceMappingURL=NavBar.css.map */
