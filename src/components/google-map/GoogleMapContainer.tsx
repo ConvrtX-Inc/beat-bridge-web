@@ -27,21 +27,21 @@ function GoogleMapContainer() {
     { id: 6, position: { lat: 70.562961, lng: -32.74219 } },
   ];
 
-  const [map, setMap] = useState(null);
+  // const [map, setMap] = useState(null);
 
-  const onLoad = React.useCallback(function callback(map) {
-    setMap(map);
-  }, []);
+  // const onLoad = React.useCallback(function callback(map) {
+  //   setMap(map);
+  // }, []);
 
-  const onUnmount = React.useCallback(function callback(map) {
-    setMap(null);
-  }, []);
+  // const onUnmount = React.useCallback(function callback(map) {
+  //   setMap(null);
+  // }, []);
 
   return isLoaded ? (
     <GoogleMap
       zoom={2}
-      onLoad={onLoad}
-      onUnmount={onUnmount}
+      // onLoad={onLoad}
+      // onUnmount={onUnmount}
       mapContainerClassName="map-container"
       options={defaultMapOptions}
       center={markers[0].position}

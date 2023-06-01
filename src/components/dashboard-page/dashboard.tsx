@@ -1,6 +1,6 @@
-import React, { Component } from "react";
+import React, { Component, useEffect } from "react";
 import { Container, Navbar, Image, Nav, Row, Col, Card } from "react-bootstrap";
-
+import { Link, useNavigate } from 'react-router-dom';
 import "./dashboard.scss";
 // images
 import totalSongsImage from "../../assets/images/total-songs-image.png";
@@ -11,6 +11,9 @@ import GoogleMapContainer from "../google-map/GoogleMapContainer";
 import CustomLineChart from "../charts/CustomLineChart";
 import DashboardStats from "../dashboard-stats/DashboardStats";
 import NavBar from "../nav/NavBar";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const totalSongsData = [
   {
@@ -65,52 +68,63 @@ const totalSongsData = [
   },
 ];
 
-export default class Dashboard extends Component {
-  render() {
-    return (
-      <div>
-        <NavBar />
-        <div className="dashboard-container">
-          <DashboardStats />
-          <Row className="text-start">
-            <Col className="welcome-container">
-              <Image src={totalSongsImage} />
-              <div className="title-text-container">
-                <h1>Total Songs Played</h1>
-              </div>
-            </Col>
-          </Row>
+function Dashboard() {
 
-          <Row>
-            <Col>
-              <CustomLineChart
-                stroke="#FF5BEF"
-                height={450}
-                data={totalSongsData}
-                id="totalSongsGraph"
-                dataKey="songs_played"
-              />
-            </Col>
-          </Row>
+  const navigate = useNavigate();
+  useEffect(() => {
 
-          <Row className="text-start">
-            <Col className="welcome-container">
-              <Image src={locationImage} />
-              <div className="title-text-container">
-                <h1>Users by location</h1>
-              </div>
-            </Col>
-          </Row>
+    if (!localStorage.getItem('login')) {
+      navigate("/");
+    }
+  }, [])
 
-          <Row>
-            <Col className="mb-8">
-              <Card>
-                <GoogleMapContainer />
-              </Card>
-            </Col>
-          </Row>
-        </div>
+  return (
+    <div>
+      <NavBar />
+      <div className="dashboard-container">
+        <DashboardStats />
+        <Row className="text-start">
+          <Col className="welcome-container">
+            <Image src={totalSongsImage} />
+            <div className="title-text-container">
+              <h1>Total Songs Played</h1>
+            </div>
+          </Col>
+        </Row>
+
+        <Row>
+          <Col>
+            <CustomLineChart
+              stroke="#FF5BEF"
+              height={450}
+              data={totalSongsData}
+              id="totalSongsGraph"
+              dataKey="songs_played"
+            />
+          </Col>
+        </Row>
+
+        <Row className="text-start">
+          <Col className="welcome-container">
+            <Image src={locationImage} />
+            <div className="title-text-container">
+              <h1>Users by location</h1>
+            </div>
+          </Col>
+        </Row>
+
+        <Row>
+          <Col className="mb-8">
+            <Card>
+              <GoogleMapContainer />
+            </Card>
+          </Col>
+        </Row>
+        <ToastContainer />        
       </div>
-    );
-  }
+    </div>
+  );
+
 }
+
+export default Dashboard;

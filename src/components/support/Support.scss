@@ -2,9 +2,11 @@
   font-family: "gilroyregular";
   src: url("../../assets/fonts/Gilroy-Regular.woff") format("woff");
 }
+
 .support-container {
   margin: 20px 26px 0px 26px;
 }
+
 @media only screen and (min-width: 768px) {
   .support-container {
     margin: 20px 60px 0px 60px;
@@ -12,61 +14,68 @@
 }
 
 .avatar {
+  width: 60PX;
   height: 60px;
   object-fit: cover;
   border-radius: 50%;
 }
 
-.sender-name{
+.sender-name {
   margin-top: 10px;
 }
 
-.message-container{
-    padding: 20px;
-    position: relative;
-    border-bottom: 1px solid #D4E0F1;
-    border-right: 1px solid #D4E0F1;
-    font-size: 18px;
-    font-weight: bold;
+.message-container {
+  padding: 20px;
+  position: relative;
+  border-bottom: 1px solid #D4E0F1;
+  border-right: 1px solid #D4E0F1;
+  font-size: 18px;
+  font-weight: bold;
 }
-.message-link{
-  color:grey;
+
+.message-link {
+  color: grey;
   font-size: 16px !important;
 }
 
-.chat-support-container{
+.chat-support-container {
   border: 2px solid #D4E0F1;
   border-radius: 6px;
 
   display: flex;
 }
 
-.chat-input-container textarea{
-    border: none;
-    outline: none;
-    width: 100%;
-    resize: none;
+.chat-input-container textarea {
+  border: none;
+  outline: none;
+  width: 100%;
+  resize: none;
+  &::placeholder{
+  vertical-align: middle;
+  display: inline;
+  }
+ 
 }
 
-.chat-input-container{
+.chat-input-container {
   border-top: 1px solid #D4E0F1;
-  padding: 30px;
+  padding: 10px 30px;
   display: flex;
-     
+
 }
 
-.chat-thread-container{
+.chat-thread-container {
   padding: 40px;
   height: 686px;
   overflow: auto;
 }
 
-.thread-list{
+.thread-list {
   flex-grow: 6;
 }
 
 
-.custom-spacer{
+.custom-spacer {
   height: 30px;
 }
 
@@ -86,67 +95,70 @@
   cursor: pointer;
 
   &:hover {
-      background-color: #6e37a5;
+    background-color: #6e37a5;
   }
+
   &:focus {
-      outline: none;
-      background-color: #6e37a5;
+    outline: none;
+    background-color: #6e37a5;
   }
+
   &:disabled {
-      opacity: 0.7;
-      cursor: not-allowed;
-      background-color: #3e3e3e;
-      border-color: #0a0a0a;
+    opacity: 0.7;
+    cursor: not-allowed;
+    background-color: #3e3e3e;
+    border-color: #0a0a0a;
   }
 }
 
-.incoming-message{
+.incoming-message {
   background: rgba(54, 197, 240, 0.15);
-    border-radius: 23px; 
-    text-align: left;
-    color: #36C5F0;
-    font-weight: 500;
-    width: 60%;
-     display: flex;
-    margin-bottom: 16px;
-    padding:14px;
+  border-radius: 23px;
+  text-align: left;
+  color: #36C5F0;
+  font-weight: 500;
+  width: 60%;
+  display: flex;
+  margin-bottom: 16px;
+  padding: 14px;
 }
 
-.message{
+.message {
   flex-grow: 8;
 }
 
-.time{
+.time {
   margin-top: 4px;
   font-size: 12px;
   flex-grow: 1;
 }
 
-.my-message{
+.my-message {
   background: #F3F3F3;
-    border-radius: 23px;
-    float: right;
-    text-align: left;
-    color: #9B9B9B;
-    font-weight: 500;
-    width: 60%;
-    float: right;
-    display: flex;
-    margin-bottom: 16px;
-    padding:14px;
+  border-radius: 23px;
+  float: right;
+  text-align: left;
+  color: #9B9B9B;
+  font-weight: 500;
+  width: 60%;
+  float: right;
+  display: flex;
+  margin-bottom: 16px;
+  padding: 14px;
 }
 
 .message-active {
   background: #F7FBFF;
 }
 
-.people-list{
-  height: 808px;
+.people-list {
+  height: 840px;
   border-right: 1px solid #D4E0F1;
- overflow-y: scroll;
+  overflow-y: scroll;
+  width: 20%;
 }
 
- .pointer{
+.pointer {
   width: 0;
   height: 0;
   border-top: 12px solid #FFFFFF;
@@ -155,5 +167,44 @@
   right: -12px;
   top: 70px;
   position: absolute;
- }
+}
 
+.search-box {
+  background-color: #F4F4FF;
+  border-radius: 23px;
+  padding: 15px;
+
+  &:focus {
+    box-shadow: none !important;
+  }
+
+  &::placeholder {
+    color: #000;
+    font-weight: 400;
+  }
+}
+
+.list-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 30px 10px 30px;
+  font-weight: 600;
+
+  p {
+    margin-bottom: 0;
+  }
+
+  span {
+    color: #50369C;
+    margin-left: 8px;
+  }
+}
+
+
+.rememberMe-container{
+  .form-check-input:checked[type=checkbox]{
+    background-color: #B250FF;
+    border-color: #B250FF;
+  }  
+}

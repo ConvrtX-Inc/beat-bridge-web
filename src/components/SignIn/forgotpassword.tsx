@@ -97,12 +97,12 @@ export default function ResetPassword() {
                         Send Confirmation
                     </LoaderButton>
                 </form>
-                <div className="sign-up">
+                {/* <div className="sign-up">
                     Don't have an account?
                     <Link className="sign-up-link" to={{ pathname: '/signup' }}>
                         Signup
                     </Link>
-                </div>
+                </div> */}
             </div>
         );
     }
@@ -169,9 +169,8 @@ export default function ResetPassword() {
             <ImageSection />
             <Col>
                 <div className="login-form col-sm-12 col-md">
-                    <div className="labels">
-                        <h4>HEY WELCOME</h4>
-                        <h1>Login to DashBoard</h1>
+                    <div className="labels">                        
+                        <h1>FORGOT PASSWORD</h1>
                     </div>
                     <div className="ResetPassword">
                         {!codeSent

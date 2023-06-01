@@ -1,4 +1,4 @@
-import { Container, Navbar, Image, Nav, Row, Col } from "react-bootstrap";
+import { Container, Navbar, Image, Nav, Row, Col, Dropdown } from "react-bootstrap";
 import "./NavBar.scss";
 // images
 import logo from "../../assets/images/logo-colored.png";
@@ -8,7 +8,16 @@ import avatar from "../../assets/images/mock-avatar.png";
 
 import { ReactComponent as DashboardIcon } from "../../assets/icons/dashboard.svg";
 import NavItem from "./NavItem";
+import { Link, useNavigate } from "react-router-dom";
+
 function NavBar(props: any) {
+
+  const navigate = useNavigate();
+  const logout = () => {
+    localStorage.clear();   
+    navigate('/');    
+  }
+  
   return (
     <div>
       <Navbar expand="lg" className="nav-container">
@@ -43,16 +52,35 @@ function NavBar(props: any) {
             </Nav.Link>
           </Nav>
 
-          <Nav className="justify-content-end nav-end">
-            <Row>
+          <Nav className="justify-content-end nav-end ">
+            <Row className="align-items-center">
               <Col>
-                <Image src={menuIcon} className="nav-icon-end nav-item-end" />
+                <Link to="#">
+                  <Image src={menuIcon} className="nav-icon-end nav-item-end" />
+                </Link>
               </Col>
               <Col>
-                <Image src={bellIcon} className="nav-icon-end nav-item-end" />
+                <Link to="#">
+                  <Image src={bellIcon} className="nav-icon-end nav-item-end" />
+                </Link>
               </Col>
+
               <Col>
-                <Image src={avatar} className="nav-item-avatar" />
+                <Dropdown
+                  align="end"
+                >
+                  <Dropdown.Toggle
+                    className="p-0 bg-transparent border-0"
+                    variant="success"
+                    id="dropdown-basic"
+                  >
+                    <Image src={avatar} className="nav-icon-end nav-item-end" />
+                  </Dropdown.Toggle>
+
+                  <Dropdown.Menu>
+                    <Dropdown.Item href="/" onClick={logout} >Logout</Dropdown.Item>
+                  </Dropdown.Menu>
+                </Dropdown>
               </Col>
             </Row>
           </Nav>
