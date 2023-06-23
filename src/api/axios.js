@@ -1,5 +1,5 @@
 import axios from "axios";
 
 export default axios.create({
-    baseURL: "https://beat.softwarealliancetest.tk"
+    baseURL: "https://api.beatbridge.app"
 })
